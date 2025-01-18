@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Accessing element properties correctly
+    let myDiv = document.getElementById("myDiv");
+    console.log(myDiv.id); // Accessing the id attribute
+
+    // Correct tag usage
+    let img = document.createElement('img');
+    img.src = 'image.jpg';
+    img.alt = 'Image';
+    document.body.appendChild(img);
+
+    // Fixing missing closing tag
+    let p = document.createElement('p');
+    p.textContent = 'This paragraph has its closing tag';
+    document.body.appendChild(p);
+  </script>
+</body>
+</html>
